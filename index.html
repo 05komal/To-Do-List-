@@ -15,6 +15,7 @@
           <input type="date" id="date">
           <label for="day">Day:</label>
           <select id="day">
+            <option value="" disabled selected>Choose</option>
             <option value="Monday">Monday</option>
             <option value="Tuesday">Tuesday</option>
             <option value="Wednesday">Wednesday</option>
@@ -30,9 +31,7 @@
           <button onclick="addTask()">Add</button>
         </div>
         <ul id="list-container">
-          <!--<li class="checked">Task 1</li>
-          <li>Task 2</li>
-          <li>Task 3</li> --> 
+          <!-- No tasks present initially -->
         </ul>
       </div>
     </div>
