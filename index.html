@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2> To-Do List <img src="images/icon.png" alt="To-Do List Icon"></h2>
+        <!-- Add Date and Day Options -->
+        <div class="date-day">
+          <label for="date">Date:</label>
+          <input type="date" id="date">
+          <label for="day">Day:</label>
+          <select id="day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+        <!-- End Date and Day Options -->
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your text">
+          <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!--<li class="checked">Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li> --> 
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
